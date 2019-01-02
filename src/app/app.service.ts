@@ -9,7 +9,7 @@ import { HttpXsrfCookieExtractor } from '@angular/common/http/src/xsrf';
 })
 export class AppService {
 
-  public baseUrl = 'http://localhost:3000/api/v1/users'
+  public baseUrl = 'http://localhost:8080/api/v1/users'
 
   constructor(private cookieService: CookieService, private _http: HttpClient) { }
 
