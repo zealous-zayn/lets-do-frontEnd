@@ -82,6 +82,7 @@ export class AppService {
     
     const params = new HttpParams()
       .set('authToken', this.cookieService.get('authtoken'))
+      .set('userId', this.cookieService.get('userId'))
 
     return this._http.post(`${this.baseUrl}/logout`, params);
 
